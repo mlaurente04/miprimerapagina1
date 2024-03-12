@@ -19,19 +19,20 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 //SELECCIONAR ELEMENTOS 
-    let contenidoTitulo = "Marcelo";
-    let titulo = document.querySelector("#logo1");
-    titulo.innerHTML = contenidoTitulo;  
+    //let contenidoTitulo = "Marcelo";
+    //let titulo = document.querySelector("#logo1");
+    //titulo.innerHTML = contenidoTitulo;  
 
 //CONDICIONALES
 
-let textoTitulo = titulo.innText;
-console.log(textoTitulo);
-if(textoTitulo == "Nombre"){
-    titulo.innerHTML = "Otro";
-} else{
-    console.log("no se cumple")
-}
+//let textoTitulo = titulo.innText;
+//console.log(textoTitulo);
+//if(textoTitulo == "Nombre"){
+    //titulo.innerHTML = "Otro";
+//} else{
+   // console.log("no se cumple")
+//}
+
 //FUNCIONES
 
 let nombre2="Ornamentales";
