@@ -1,0 +1,500 @@
+body {
+    background-color: #F5F5DC;
+ margin: 0px;    
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #D2B48C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #logo1 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;    
+    gap: 20px; 
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 10px;
+}
+a {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;   
+}
+ul, ol { 
+    list-style: none;    
+}
+/* esto hace que la moverme por el menu cambie 
+nav ul :hover{
+    background-color: black;
+    color: #fff;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}*/ 
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.bienve {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+       
+    gap: 10px;
+    padding-left: 50px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 700px;
+    
+
+}
+.contenido{
+    padding: 10px;
+    height: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    background-color: #FFFFFF; 
+    border-radius: 5%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);    
+    margin: 0px;
+}
+.imgcontainer {
+    width: 80%;
+    height:60%
+}
+.titulosp{
+    display: block;
+    text-align: center;       
+}
+.texto{
+    width: 90%;
+    text-align: center;
+}
+.card .footercard {
+    
+    text-align: center;
+    background-color: gray;  
+    
+}
+
+footer{
+    background-color: #D2B48C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer nav ul{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer #fiXeado {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;    
+}
+.footname{
+    display: flex;
+    justify-content: center;
+    background-color: #e5ceb0;    
+}
+
+/* ------------- Encabezado Contacto ------------- */
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    /*width: 80%;*/
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    /*justify-content: flex-start;*/
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 25.7%;
+    /*width: 100%;*/
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+
+                            /*para moviles*/
+                            
+
+@media (max-width: 768px) {
+
+.checkbtn{
+    display: block;
+}
+
+header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 244, 245);
+    text-align: center;
+    
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    left: 0%;
+    display: block;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+      
+  
+}
+   
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    
+}
+.contenido{
+    padding: 10px;
+    height: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgcontainer {
+    width: 80%;
+    height:60%
+}
+.titulosp{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+.texto{
+    width: 90%;
+    text-align: center;
+}
+.card .footercard {
+    background-color: gray;
+    text-align: center;
+}
+
+footer{
+    background-color: #D2B48C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer nav ul{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer #fiXeado {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;    
+}
+.footname{
+    display: flex;
+    justify-content: center;
+    background-color: #e5ceb0;    
+}}
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 768px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"]{
+      width: 250px;
+      height: initial;
+    }
+
+    .form-row input[type="email"]{
+        width: 250px;
+        height: initial;
+      }
+
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;}
+        
+
+
+
+                        /*para pantallas grandes*/
+
+ /*   
+@media (min-width: 769px){
+ .checkbtn{
+    display: block;
+}
+
+header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 244, 245);
+    text-align: center;
+    
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    left: 0%;
+    display: block;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;   
+  
+}
+   
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    border: 5px solid rgb(226, 38, 25); 
+}
+.contenido{
+    padding: 10px;
+    height: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgcontainer {
+    width: 80%;
+    height:60%
+}
+.titulosp{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+.texto{
+    width: 90%;
+    text-align: center;
+}
+.card .footercard {
+    background-color: gray;
+    text-align: center;
+}
+
+footer{
+    background-color: #D2B48C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer nav ul{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer #fiXeado {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;    
+}
+.footname{
+    display: flex;
+    justify-content: center;
+    background-color: #e5ceb0;    
+}
+    
