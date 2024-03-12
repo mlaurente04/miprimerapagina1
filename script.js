@@ -35,20 +35,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //FUNCIONES
 
-let nombre2="Ornamentales";
-let ciudad="Cusco";
-let gusto="promovemos";
+//let nombre2="Ornamentales";
+//let ciudad="Cusco";
+//let gusto="promovemos";
 
-let parrafo = document.querySelector(".parrafo1");
+//let parrafo = document.querySelector(".parrafo1");
 
-function cambiarTexto(nombre2, ciudad, gusto){
+//function cambiarTexto(nombre2, ciudad, gusto){
     //let contenido = `Me llamo ${nombre}, naci en ${ciudad} y vivo en Cusco. Me gusta la ${gusto} y salir a pasear en días de sol. Me encantaria aprender a programar para poder ayudar a las personas a mostrar lo que hacen.`;
-    let contenido = `En nuestro sitio web encontrarás una amplia gama de plantas ${nombre2} resistentes y tropicales, las plantas que ofrecemos se propagan de manera convencional ${ciudad}, es decir, mediante siembra, división y esquejes.        
-    Damos gran importancia a la calidad de las plantas que ${gusto}.`;
-    return contenido;    
-}
+    //let contenido = `En nuestro sitio web encontrarás una amplia gama de plantas ${nombre2} resistentes y tropicales, las plantas que ofrecemos se propagan de manera convencional ${ciudad}, es decir, mediante siembra, división y esquejes.        
+    //Damos gran importancia a la calidad de las plantas que ${gusto}.`;
+   // return contenido;    
+//}
 
-parrafo.innerText = cambiarTexto(nombre2, ciudad, gusto);
+//parrafo.innerText = cambiarTexto(nombre2, ciudad, gusto);
 
 //ALERTAS EN FORMULARIO
 
